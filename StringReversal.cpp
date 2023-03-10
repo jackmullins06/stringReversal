@@ -16,14 +16,13 @@ std::string reverseString(std::string input) {
         reversedString = reversedString + input[i];
     }
 
-    std::cout << reversedString << std::endl;
-
     return reversedString; 
 }
 
 int main() {
     std::string input = promptForInput();
-    reverseString(input);
+    
+    std::cout << reverseString(input) << std::endl;
 
     return 0;
 }
